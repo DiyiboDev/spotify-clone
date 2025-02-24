@@ -28,9 +28,12 @@ input[type="range"]:hover::-webkit-slider-thumb {
 
 /* Thumb: for Firefox */
 input[type="range"]::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #4d4d4d;
   box-shadow: none;
+  scale: 0;  
+}
+input[type="range"]:hover::-moz-range-thumb {
+  scale: 1;
 }
