@@ -1,0 +1,11 @@
+@keyframes changeWidth {
+  to {
+    width: 3em;
+  }
+}
+
+@keyframes enhance-header {
+  to {
+    background-color: #121212;
+  }
+}
