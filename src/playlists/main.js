@@ -1,5 +1,5 @@
-import { fetchPlaylists } from "../lib/playlist"
 import { $ } from "../utils/dom"
+import { RenderPlaylist } from "./use-cases/render-playlist"
 import { RenderPlaylists } from "./use-cases/render-playlists"
 
 const displayPlaylists = async() => {
@@ -9,7 +9,15 @@ const displayPlaylists = async() => {
   $playlistsAside.append($songs)
 }
 
+const displayPlaylist = async() => {
+  const $playlist = await RenderPlaylist()
+  
+  const $playlistContent = $('.main__container')
+  $playlistContent.append($playlist)
+}
+
 
 export const App = async() => {
   displayPlaylists()
+  displayPlaylist()
 }
