@@ -3,13 +3,8 @@
   display: flex;
   flex-direction: column;
   padding-inline: 1em;
-  /* background-color: #003060; */
-  /* background: linear-gradient(to bottom, tranparent 0%, #1212129d 20%); */
-
-
-  background-color: #003060;
   background-image: linear-gradient(#1212129d 5%, #121212 20%);
-  border-top: 1px solid #121212;
+  border-top: 1px solid rgba(18, 18, 18);
 
   .track-info__texts {
     flex: 1;
