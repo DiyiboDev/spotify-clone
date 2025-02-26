@@ -1,7 +1,51 @@
 import { fetchPlaylists } from "../../lib/playlist"
+import { navigateTo } from "../../routes/route"
 import { CLASSES } from "../../utils/contants"
 import { $ } from "../../utils/dom"
 import { Playlist } from "../models/playlist.model"
+import { RenderPlaylist } from "./render-playlist"
+
+/**
+ * 
+ * @param {Playlist} playlist 
+ */
+const htmlPlaylists = ({ id, albumId, title, color, cover, artists }) => {
+  const $song = document.createElement('a')
+  $song.setAttribute('data-id', albumId)
+  $song.setAttribute('data-color', color)
+  $song.classList.add('playlist__song', 'track-info')
+  $song.href = `/playlist/${id}`
+
+  $song.addEventListener('click', async(event) =>  {
+    event.preventDefault()
+
+    const isSameUrl = navigateTo($song.href)
+    if(isSameUrl) return
+
+    const $playlist = await RenderPlaylist()
+    const $playlistContent = $('.main__container')
+
+    $playlistContent.replaceChild($playlist, $playlistContent.children[0])
+  })
+
+  const html = 
+    `
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="/images/playlists/${cover}" alt="Song: ${title}" />
+      </picture>
+
+      <div class="track-info__texts">
+        <span class="track-info__title">${title}</span>
+        <div class="track-info__artists">
+          <span class="track-info__artist">${artists}</span>
+        </div>
+      </div>
+    `
+  
+  $song.innerHTML = html
+
+  return $song
+}
 
 /**
  * 
@@ -15,39 +59,8 @@ export const RenderPlaylists = async() => {
   try {
     const playlists = await fetchPlaylists()
 
-    playlists.forEach( ({ id, albumId, title, color, cover, artists }) => {
-      const $song = document.createElement('div')
-      $song.setAttribute('data-id', albumId)
-      $song.setAttribute('data-color', color)
-      $song.classList.add('playlist__song', 'track-info')
-    
-      const $picture = document.createElement('picture')
-      $picture.classList.add('track-info__picture')
-    
-      const $image = document.createElement('img')
-      $image.classList.add('track-info__image')
-      $image.src = `/images/playlists/${cover}`
-      $image.alt = `Song: ${title}`
-    
-      const $texts = document.createElement('div')
-      $texts.classList.add('track-info__texts')
-    
-      const $title = document.createElement('span')
-      $title.textContent = title
-      $title.classList.add('track-info__title')
-    
-      const $artists = document.createElement('div')
-      $artists.classList.add('track-info__artists')
-    
-      const $artist = document.createElement('span')
-      $artist.textContent = artists
-      $artist.classList.add('track-info__artist')
-    
-      $picture.append($image)
-      $artists.append($artist)
-      $texts.append($title, $artists)
-      $song.append($picture, $texts)
-      
+    playlists.forEach( ({ id, albumId, title, color, cover, artists }) => {      
+      const $song = htmlPlaylists({id, albumId, title, color, artists, cover})
       $fragment.append($song)
     })
     
@@ -59,6 +72,6 @@ export const RenderPlaylists = async() => {
 
     return $error
   } finally {
-    $('.loader').classList.add(CLASSES.HIDDEN)
+    $('.loader', $('.aside-playlists')).classList.add(CLASSES.HIDDEN)
   }
 }
