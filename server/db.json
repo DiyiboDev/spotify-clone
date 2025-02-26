@@ -1,7 +1,7 @@
 {
   "playlists": [
   { 
-    "id": 1, 
+    "id": "1", 
     "albumId": 1, 
     "title": "Arcane League of Legends Season 1 and Season 2", 
     "color": "#003060", 
@@ -9,7 +9,7 @@
     "artists": ["Arcane", "League of Legends"] 
   },
   { 
-    "id": 2, 
+    "id": "2", 
     "albumId": 2, 
     "title": "Bruno Mars Hits", 
     "color": "#FF6F00", 
@@ -17,7 +17,7 @@
     "artists": ["Bruno Mars"] 
   },
   { 
-    "id": 3, 
+    "id": "3", 
     "albumId": 3, 
     "title": "Imagine Dragons: Evolve", 
     "color": "rgb(100 13 12 / 70%)", 
@@ -25,7 +25,7 @@
     "artists": ["Imagine Dragons"] 
   },
   { 
-    "id": 4, 
+    "id": "4", 
     "albumId": 4, 
     "title": "Billy Ashley: Best Tracks", 
     "color": "#6C5B7B", 
