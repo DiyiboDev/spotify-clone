@@ -1,7 +1,7 @@
 /**
  * 
  * @param {string} route 
- * @returns {true|undefined}
+ * @returns {boolean}
  */
 export const navigateTo = ( route ) => {
   const songURL = new URL(route).pathname.split('/')[2]
