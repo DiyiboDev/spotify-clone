@@ -38,3 +38,20 @@ export const fetchPlaylistById = async( playlistId = '2' ) => {
   }
 
 }
+
+export const fetchPlaylistSongById = async( playlistId ) => {
+
+  try {
+    const response = await fetch('https://localhost:3020/playlists')
+
+    if(!response.ok) {
+      throw new Error(`Error: ${response.status}`)
+    }
+
+    const data = await response.json()
+    return data
+  } catch(error) {
+    throw error
+  }
+
+}
