@@ -1,7 +1,7 @@
 /**
  * 
  * @param {string} route 
- * @returns {boolean}
+ * @returns {boolean} if the url and the link url is the same return true else
  */
 export const navigateTo = ( route ) => {
   const songURL = new URL(route).pathname.split('/')[2]
