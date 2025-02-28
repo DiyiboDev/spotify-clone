@@ -1,36 +1,105 @@
 {
   "playlists": [
   { 
-    "id": "1", 
+    "id": "arcane",
     "albumId": 1, 
     "title": "Arcane League of Legends Season 1 and Season 2", 
     "color": "#003060", 
     "cover": "1.jpg", 
-    "artists": ["Arcane", "League of Legends"] 
+    "artists": ["Arcane", "League of Legends"],
+    "songs": [
+      { "id": 1, "albumId": 1, "image": "1.jpg", "title": "Enemy", "artists": ["Imagine Dragons", "JID"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 2, "albumId": 1, "image": "2.jpg", "title": "Dynasties & Dystopia", "artists": ["Denzel Curry", "Gizzle", "Bren Joy"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 3, "albumId": 1, "image": "3.jpg", "title": "Snakes", "artists": ["Pvris", "Miyavi"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 4, "albumId": 1, "image": "4.jpg", "title": "Misfit Toys", "artists": ["Pusha T", "Mako"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 5, "albumId": 1, "image": "5.jpg", "title": "Goodbye", "artists": ["Ramsey"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 6, "albumId": 1, "image": "6.jpg", "title": "Guns For Hire", "artists": ["Woodkid"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 7, "albumId": 1, "image": "7.jpg", "title": "What Could Have Been", "artists": ["Sting", "Ray Chen"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 8, "albumId": 1, "image": "8.jpg", "title": "Playground", "artists": ["Bea Miller"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 9, "albumId": 1, "image": "9.jpg", "title": "Our Love", "artists": ["Curtis Harding", "Jazmine Sullivan"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 10, "albumId": 1, "image": "10.jpg", "title": "When Everything Went Wrong", "artists": ["Fantastic Negrito"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 11, "albumId": 1, "image": "11.jpg", "title": "Goodbye Remix", "artists": ["Ramsey"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 12, "albumId": 1, "image": "12.jpg", "title": "Lilac Wine", "artists": ["Jeff Buckley"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 13, "albumId": 1, "image": "13.jpg", "title": "Bane", "artists": ["Bones UK"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 14, "albumId": 1, "image": "14.jpg", "title": "Can’t Stop Me Now", "artists": ["Celeste"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 15, "albumId": 1, "image": "15.jpg", "title": "Till I’m a Ghost", "artists": ["Noah Kahan"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 16, "albumId": 1, "image": "16.jpg", "title": "Burn It All Down", "artists": ["PVRIS"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 17, "albumId": 1, "image": "17.jpg", "title": "Echoes", "artists": ["The Score"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 18, "albumId": 1, "image": "18.jpg", "title": "Only Ones", "artists": ["Bishop Briggs"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 19, "albumId": 1, "image": "19.jpg", "title": "Who’s Ready For Tomorrow", "artists": ["REZZ", "fknsyd"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 20, "albumId": 1, "image": "20.jpg", "title": "Dirty Little Animals", "artists": ["Bones UK"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 21, "albumId": 1, "image": "21.jpg", "title": "The Call", "artists": ["Kaden MacKay"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 22, "albumId": 1, "image": "22.jpg", "title": "Hymn of Valor", "artists": ["League of Legends Music Team"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 23, "albumId": 1, "image": "23.jpg", "title": "Start a Riot", "artists": ["Duckwrth", "Shaboozey"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 24, "albumId": 1, "image": "24.jpg", "title": "Legends Never Die", "artists": ["Against The Current"], "album": "Arcane League of Legends Season 1 and Season 2" },
+      { "id": 25, "albumId": 1, "image": "25.jpg", "title": "Rise", "artists": ["The Glitch Mob", "Mako", "The Word Alive"], "album": "Arcane League of Legends Season 1 and Season 2" }
+    ]
   },
   { 
-    "id": "2", 
+    "id": "bruno-mars-hits",
     "albumId": 2, 
     "title": "Bruno Mars Hits", 
     "color": "#FF6F00", 
     "cover": "2.jpg", 
-    "artists": ["Bruno Mars"] 
-  },
+    "artists": ["Bruno Mars"],
+      "songs": [
+        { "id": 1, "albumId": 1, "image": "1.jpg", "title": "Just the Way You Are", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 2, "albumId": 1, "image": "2.jpg", "title": "Grenade", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 3, "albumId": 1, "image": "3.jpg", "title": "Locked Out of Heaven", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 4, "albumId": 1, "image": "4.jpg", "title": "When I Was Your Man", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 5, "albumId": 1, "image": "5.jpg", "title": "24K Magic", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 6, "albumId": 1, "image": "6.jpg", "title": "That's What I Like", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 7, "albumId": 1, "image": "7.jpg", "title": "Uptown Funk", "artists": ["Mark Ronson ft. Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 8, "albumId": 1, "image": "8.jpg", "title": "The Lazy Song", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 9, "albumId": 1, "image": "9.jpg", "title": "Marry You", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 10, "albumId": 1, "image": "10.jpg", "title": "Treasure", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 11, "albumId": 1, "image": "11.jpg", "title": "Versace on the Floor", "artists": ["Bruno Mars"], "album": "Bruno Mars Hits" },
+        { "id": 12, "albumId": 1, "image": "12.jpg", "title": "Leave the Door Open", "artists": ["Bruno Mars", "Anderson .Paak", "Silk Sonic"], "album": "Bruno Mars Hits" }
+      ]
+    },
   { 
-    "id": "3", 
+    "id": "image-dragons-envolve",
     "albumId": 3, 
     "title": "Imagine Dragons: Evolve", 
     "color": "rgb(100 13 12 / 70%)", 
     "cover": "3.jpg", 
-    "artists": ["Imagine Dragons"] 
+    "artists": ["Imagine Dragons"],
+      "songs": [
+        { "id": 1, "albumId": 1, "image": "1.jpg", "title": "Radioactive", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 2, "albumId": 1, "image": "2.jpg", "title": "Demons", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 3, "albumId": 1, "image": "3.jpg", "title": "Believer", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 4, "albumId": 1, "image": "4.jpg", "title": "Thunder", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 5, "albumId": 1, "image": "5.jpg", "title": "Whatever It Takes", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 6, "albumId": 1, "image": "6.jpg", "title": "Natural", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 7, "albumId": 1, "image": "7.jpg", "title": "Follow You", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 8, "albumId": 1, "image": "8.jpg", "title": "Bones", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 9, "albumId": 1, "image": "9.jpg", "title": "Enemy", "artists": ["Imagine Dragons", "JID"], "album": "Imagine Dragons" },
+        { "id": 10, "albumId": 1, "image": "10.jpg", "title": "Walking the Wire", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 11, "albumId": 1, "image": "11.jpg", "title": "I Don't Know Why", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" },
+        { "id": 12, "albumId": 1, "image": "12.jpg", "title": "It's Time", "artists": ["Imagine Dragons"], "album": "Imagine Dragons" }
+      ]
   },
   { 
-    "id": "4", 
+    "id": "billy-ashley-best-tracks",
     "albumId": 4, 
     "title": "Billy Ashley: Best Tracks", 
     "color": "#6C5B7B", 
     "cover": "4.jpg", 
-    "artists": ["Billy Ashley"] 
+    "artists": ["Billy Ashley"],
+      "songs": [
+        { "id": 1, "albumId": 1, "image": "1.jpg", "title": "Midnight Drive", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 2, "albumId": 1, "image": "2.jpg", "title": "City Lights", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 3, "albumId": 1, "image": "3.jpg", "title": "Summer Rain", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 4, "albumId": 1, "image": "4.jpg", "title": "Lost in the Crowd", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 5, "albumId": 1, "image": "5.jpg", "title": "Neon Nights", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 6, "albumId": 1, "image": "6.jpg", "title": "Silent Streets", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 7, "albumId": 1, "image": "7.jpg", "title": "Golden Hour", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 8, "albumId": 1, "image": "8.jpg", "title": "Urban Echoes", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 9, "albumId": 1, "image": "9.jpg", "title": "Rooftop Views", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 10, "albumId": 1, "image": "10.jpg", "title": "Dreaming Awake", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 11, "albumId": 1, "image": "11.jpg", "title": "Electric Shadows", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" },
+        { "id": 12, "albumId": 1, "image": "12.jpg", "title": "Concrete Jungle", "artists": ["Billy Ashley"], "album": "Billy Ashley: Best Tracks" }
+      ]
   }],
   "tracks": [     
     { "id": 1, "albumId": 1, "image": "1.jpg", "title": "Enemy", "artists": ["Imagine Dragons", "JID"], "album": "Arcane League of Legends Season 1 and Season 2" },
@@ -66,6 +135,6 @@
     { "id": 31, "albumId": 2, "image": "31.jpg", "title": "Die with a Smile", "artists": ["Bruno Mars"], "album": "Bruno Mars" },
     { "id": 32, "albumId": 2, "image": "32.jpg", "title": "Apt.", "artists": ["Bruno Mars"], "album": "Bruno Mars" },
     { "id": 33, "albumId": 2, "image": "33.jpg", "title": "Uptown Funk", "artists": ["Bruno Mars", "Mark Ronson"], "album": "Bruno Mars" },
-    { "id": 34, "albumId": 2, "image": "34.jpg", "title": "The Lazy Song", "artists": ["Bruno Mars"], "album": "Bruno Mars" }    
+    { "id": 34, "albumId": 2, "image": "34.jpg", "title": "The Lazy Song", "artists": ["Bruno Mars"], "album": "Bruno Mars" }
   ]
 }
