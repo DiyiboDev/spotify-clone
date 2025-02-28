@@ -1,3 +1,17 @@
+  $song.addEventListener('click', async(event) =>  {
+    event.preventDefault()
+
+    const isSameUrl = navigateTo($song.href)
+    if(isSameUrl) return
+
+    const { $playlist, $songs } = await RenderPlaylist()
+    const $playlistContent = $('.main__container')
+    const $songsContainer = $('.playlist')
+
+    $playlistContent.replaceChild($playlist, $playlistContent.children[0])
+    $songsContainer.replaceChild($songs, $songsContainer.children[0])
+  })
+
 <div class="search__cancel">
   <button type="button" class="cancel__btn">
       <span">
