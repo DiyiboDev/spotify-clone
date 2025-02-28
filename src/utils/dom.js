@@ -13,3 +13,13 @@ export const $ =  ( selector, context = document ) => context.querySelector( sel
  * @returns {NodeListOf<Element>} elements
  */
 export const $$ = ( selector, context = document ) => context.querySelectorAll( selector )
+
+export const selectorsName = {
+  ASIDE_PLAYLISTS: '.aside-playlists',
+  PLAYLISTS: '.playlists',
+  PLAYLISTS_SONG: '.playlist__song',
+  PLAYLISTS_SONGS: '.playlists__songs',
+  MAIN: '.main',
+  MAIN_CONTAINER: '.main__container',
+  PLAYLIST: '.playlist'
+}
