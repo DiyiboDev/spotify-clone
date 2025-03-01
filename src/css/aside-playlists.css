@@ -17,6 +17,9 @@
       width: 2.5em;
       height: 2.5em;
     }
+    .track-info__title:hover, .track-info__artist:hover {
+      text-decoration: none;
+    }
   } 
   .playlists {
     display: flex;

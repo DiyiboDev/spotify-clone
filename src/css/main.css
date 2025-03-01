@@ -2,9 +2,10 @@
 .main {
   grid-area: main;
   background-color: #121212;
+  animation: up 1s ease-in-out forwards;
+  padding-bottom: 1em;
 }
 .main__container {
-  height: 270px;
   display: flex;
   flex-direction: column;
 }
@@ -17,6 +18,7 @@
 }
 .main__picture {
   width: clamp(10em, 40vw, 18em);
+  min-width: 150px;
   align-self: center;
   box-shadow: 0 4px 60px rgba(0,0,0,.5);
 }
@@ -42,15 +44,22 @@
 
 /* Artist */
 .artist {
-  display: flex;
+  display: grid;  
+  grid-template-columns: min-content 1fr;
   align-items: center;
   margin-top: 1em;
   gap: .2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .artist__container {
   display: flex;
   align-items: center;
   gap: .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .artist__name {
   font-weight: 700;
