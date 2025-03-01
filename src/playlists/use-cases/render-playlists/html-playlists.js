@@ -20,7 +20,7 @@ export const htmlPlaylists = ({ id, title, cover, artists }) => {
 export const templateSong = ( { cover, title, artists } ) => {
   return ( `
     <picture class="track-info__picture">
-      <img class="track-info__image" src="/images/playlists/${cover}" alt="${title}" />
+      <img class="track-info__image" src="${cover}" alt="${title}" />
     </picture>
 
     <div class="track-info__texts">

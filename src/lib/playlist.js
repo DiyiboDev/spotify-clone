@@ -29,10 +29,10 @@ export const fetchPlaylists = async() => {
  * @returns {Promise<Playlist>} The fetched Playlist object
  * @throws {Error} If the request fails
  */
-export const fetchPlaylistById = async( playlistId = 'arcane' ) => {
+export const fetchPlaylistById = async( path = 'playlists', playlistId = 'arcane' ) => {
 
   try {
-    const response = await fetch(`http://localhost:3020/playlists/${playlistId}`)
+    const response = await fetch(`http://localhost:3020/${path}/${playlistId}`)
 
     if(!response.ok) {
       throw new Error(`Error: ${response.status}`)

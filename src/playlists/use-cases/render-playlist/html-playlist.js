@@ -6,13 +6,13 @@ import { Playlist } from "../../models/playlist.model"
  * 
  * @param {Playlist} playlist
  */
-export const htmlPlaylist = ( { id, cover, title, artists, color } ) => {
-  const html = templatePlaylist({ cover, title, artists })
+export const htmlPlaylist = ( { id, coverPlaylist, cover, title, artists, color } ) => {
+  const html = templatePlaylist({ coverPlaylist, cover, title, artists })
   const $playlist = document.createElement('div')
 
   $playlist.setAttribute('data-id', id)
   $playlist.classList.add('main__information')
-  $playlist.style.backgroundImage =  `linear-gradient(${color} 10%,rgba(18, 18, 18, 0.616) 100%)`
+  $playlist.style.backgroundImage =  `linear-gradient(${color || '#303038FF'} 10%,rgba(18, 18, 18, 0.616) 100%)`
   $playlist.innerHTML = html
 
   return $playlist
@@ -23,11 +23,11 @@ export const htmlPlaylist = ( { id, cover, title, artists, color } ) => {
  * @param {Playlist} playlist
  * @returns {string}
  */
-const templatePlaylist = ( { cover, title, artists } ) => {
+const templatePlaylist = ( { cover, coverPlaylist, title, artists } ) => {
   return ( `
     <div class="main__content">
       <picture class="main__picture">
-        <img class="main__image" src="/images/playlists/${cover}" alt="${title}">
+        <img class="main__image" src="${cover}" alt="${title}">
       </picture>
 
       <div class="main__texts">
@@ -36,10 +36,10 @@ const templatePlaylist = ( { cover, title, artists } ) => {
         <div class="artist">
           <div class="artist__container">
             <picture class="artist__picture">
-              <img class="artist__image" src="/images/playlists/${cover}" alt="Artist: ${artists}">
+              <img class="artist__image" src="${coverPlaylist}" alt="Artist: ${artists}">
             </picture>
 
-            <span class="artist__name">${artists}</span>
+            ${artists.map( artist => `<span class="artist__name">${artist}</span>`).join(',')}
           </div>
 
           <div class="main__time">
