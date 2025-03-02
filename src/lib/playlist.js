@@ -46,10 +46,10 @@ export const fetchPlaylistById = async( path = 'playlists', playlistId = 'arcane
 
 }
 
-export const fetchPlaylistSongs = async() => {
+export const fetchTracks = async( start, limit ) => {
 
   try {
-    const response = await fetch('http://localhost:3020/tracks')
+    const response = await fetch(`http://localhost:3020/tracks?_start=${start}&_limit=${limit}`)
 
     if(!response.ok) {
       throw new Error(`Error: ${response.status}`)
