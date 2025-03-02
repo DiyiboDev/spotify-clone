@@ -13,3 +13,8 @@ export const DEVICES = {
 export const ERROR_MESSAGE = {
   PLAYLISTS: 'Error to get Playlists',
 }
+
+export const PATHS = {
+  tracks: 'tracks',
+  playlists: 'playlists'
+}
