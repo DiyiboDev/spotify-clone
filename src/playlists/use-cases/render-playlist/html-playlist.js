@@ -1,18 +1,25 @@
+"use strict";
+
 import { FavoriteIcon, MoreIcon, ShareIcon } from "../../../icons/icons"
-import { selectorsName } from "../../../utils/dom"
+import { ELEMENTS } from "../../../utils/dom"
 import { Playlist } from "../../models/playlist.model"
 
+
 /**
- * 
  * @param {Playlist} playlist
  */
-export const htmlPlaylist = ( { id, coverPlaylist, cover, title, artists, color } ) => {
+export const htmlPlaylist = ( { id, coverPlaylist, cover, title, artists, color: colorValue } ) => {
   const html = templatePlaylist({ coverPlaylist, cover, title, artists })
   const $playlist = document.createElement('div')
+  const color = colorValue || '#30308FF'
+
+  ELEMENTS.main.style.backgroundColor = color
+  ELEMENTS.main.scrollTo({ top: 0 })
 
   $playlist.setAttribute('data-id', id)
   $playlist.classList.add('main__information')
-  $playlist.style.backgroundImage =  `linear-gradient(${color || '#303038FF'} 10%,rgba(18, 18, 18, 0.616) 100%)`
+  $playlist.style.backgroundImage =  `linear-gradient(${color} 10%,rgba(18, 18, 18, 0.616) 100%)`
+  $playlist.style.backgroundColor = color
   $playlist.innerHTML = html
 
   return $playlist
