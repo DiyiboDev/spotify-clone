@@ -5,6 +5,7 @@
   padding-inline: 1em;
   background-image: linear-gradient(#1212129d 5%, #121212 20%);
   border-top: 1px solid rgba(18, 18, 18);
+  padding-bottom: 1em;
 
   .track-info__texts {
     flex: 1;
