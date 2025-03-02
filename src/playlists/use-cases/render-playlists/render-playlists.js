@@ -1,9 +1,9 @@
 import { fetchPlaylists } from "../../../lib/playlist"
 import {  ERROR_MESSAGE } from "../../../utils/contants"
-import { $, selectorsName } from "../../../utils/dom"
 import { Error } from '../../../components/Error'
 import { HideLoader } from "../../../components/Loader"
 import { htmlPlaylists } from "./html-playlists"
+import { ELEMENTS } from "../../../utils/dom"
 
 /**
  * @returns { Promise<DocumentFragment> | HTMLDivElement> }
@@ -23,6 +23,6 @@ export const RenderPlaylists = async() => {
   } catch(error) {
     return Error(ERROR_MESSAGE.PLAYLISTS)
   } finally {
-    HideLoader($(selectorsName.PLAYLISTS))
+    HideLoader(ELEMENTS.playlists)
   }
 }

@@ -1,4 +1,4 @@
-import { $, selectorsName } from "../../../utils/dom"
+import { $, ELEMENTS } from "../../../utils/dom"
 import { listenerSongs } from "./listeners-song"
 import { RenderPlaylist } from "./render-playlist"
 
@@ -11,7 +11,7 @@ export const displayPlaylist = async() => {
   const { $playlist, $songs } = await RenderPlaylist(path+'s')
   
   const $playlistContent = $('.main__container')
-  const $playlistSongs = $(selectorsName.PLAYLIST)
+  const $playlistSongs = ELEMENTS.playlist
 
   $playlistContent.append($playlist)
   $playlistSongs.append($songs)

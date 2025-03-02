@@ -1,12 +1,12 @@
 import { navigateTo } from "../../../routes/route"
-import { $, selectorsName } from "../../../utils/dom"
+import { ELEMENTS } from "../../../utils/dom"
 import { RenderPlaylist } from "../render-playlist/render-playlist"
 
 export const listenerPlaylists = () => {
-  const $playlists = $(selectorsName.PLAYLISTS, $(selectorsName.ASIDE_PLAYLISTS))
+  const $playlists = ELEMENTS.playlistsSongs
 
   $playlists.addEventListener('click', async (event) => {
-    const songsItem = event.target.closest(selectorsName.PLAYLISTS_SONG)
+    const songsItem = event.target.closest('.playlist__song')
     if (!songsItem) return
 
     event.preventDefault()
@@ -14,8 +14,8 @@ export const listenerPlaylists = () => {
     const isSameUrl = navigateTo(songsItem.href)
     if (isSameUrl) return
 
-    const $mainContainer = $(selectorsName.MAIN_CONTAINER)
-    const $playlistSongs = $(selectorsName.PLAYLIST)
+    const $mainContainer = ELEMENTS.mainContainer
+    const $playlistSongs = ELEMENTS.playlist
 
     if($mainContainer) {
       const { $playlist, $songs } = await RenderPlaylist('playlists')
